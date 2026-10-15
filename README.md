@@ -80,17 +80,43 @@ console.log(nome);
 ## Variáveis
 
 1 - Qual a diferença entre `let`, `const` e `var`?
+
+- **`let`:** é uma variável de escopo local, somente existindo durante a execução do bloco de código em que ela foi declarada.
+
+- **`const`:** é uma 'variável' com valor constante, não podendo ser modificada após sua declaração. Objetos declarados como constantes ainda podem ter seus atributos modificados, mas não é possível atribuir outro objeto inteiro. Vetores podem ter elementos modificados, adicionados ou expluídos, mas não é possível redefiní-lo.
+
+- **`var`:** é uma variável de escopo de função ou global (não respeita blocos de código), podendo ser reatribuída e redeclarada livremente, e é inicializada com o valor `undefined`.
+
 2 - Quando usar cada uma dessas declarações?
+
+Por convenção, é recomendado utilizar apenas `const` para todas as variáveis, pois protege o valor contra reatribuições acidentais e deixa o código mais seguro. A excessão é justamente quando se o valor da variável precisar ser modificado durante a execução, nesses casos, devemos utilizar `let`. O uso de `var` não é recomendado atualmente em nenhum caso, mas pode ser encontrado em sistemas legados.
+
 3 - Crie variáveis para armazenar:
 
-- Nome completo
-- Idade
-- Cidade onde mora
-
-4 - Exiba todos os valores no console com mensagens claras, por exemplo:
+- Nome completo:
 
 ```js
-console.log("Nome:", nomeCompleto);
+const nomeCompleto = "Adriano Araújo Domingos dos Santos";
+```
+
+- Idade:
+
+```js
+const idade = 24;
+```
+
+- Cidade onde mora:
+
+```js
+const cidade = "Belo Horizonte";
+```
+
+4 - Exiba todos os valores no console com mensagens claras:
+
+```js
+console.log("Nome completo: ", nomeCompleto);
+console.log("Idade: ", idade);
+console.log("Cidade onde mora: ", cidade);
 ```
 
 ## Operadores
