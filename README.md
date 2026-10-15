@@ -13,7 +13,37 @@
 ## Tipos de Saída
 
 1 - O que é um tipo de saída em JavaScript?
-2 - Cite e explique 3 tipos de saída diferentes em JS (por exemplo: console.log, alert, document.write)
+
+Uma saída em JavaScript é uma forma de exibir uma informação para o usuário/desenvolvedor.
+
+2 - Cite e explique 3 tipos de saída diferentes em JS (por exemplo: `console.log`, `alert`, `document.write`)
+
+- **`console.log`:** é uma de exibir algum valor de qualquer tipo (inclusive elementos) no console de desenvolvimento do navegador. Também existe variações como `console.warn` para adiciona a semântica de aviso e `console.error` que registra um erro. Exemplo:
+
+```js
+console.log("Hello World!");
+let x = 10;
+console.log(x);
+```
+
+- **`alert`:** exibe uma notificação através de uma janela nativa do navegador com uma mensagem textual. Também é possível utilizar o `confirm` que também exibe uma notificação, porém com um botão de confirmar ou cancelar, e retorna um valor de `true` ou `false` dependendo da escolha do usuário. Exemplo:
+
+```js
+alert("Sua ação foi registrada com sucesso.");
+confirm("Você tem certeza?");
+```
+
+- **`innerHTML`:** adiciona um conteúdo HTML válido dentro de um elemento. Exemplo:
+
+```html
+<p id="mensagem"></p>
+
+<script>
+  const elemento = document.getElementById("mensagem");
+  elemento.innerHTML = "Texto inserido pelo JavaScript!";
+</script>
+```
+
 3 - Crie um arquivo saida.js e exiba as seguintes mensagens:
 
 “Olá, mundo!” no console.
