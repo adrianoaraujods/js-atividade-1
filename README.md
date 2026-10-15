@@ -55,19 +55,26 @@ Uma mensagem na página HTML dizendo: "Você completou a Parte 1!"
 ## Declarações, Sintaxe e Comentários
 
 1 - Explique o que significa uma declaração em JavaScript.
+
+Uma declaração é um bloco de código que executa uma instrução. Em JavaScript, um declaração pode ser delimitada por uma quebra de linha ou um ponto e vírugla `;`.
+
 2 - Qual a importância dos comentários no código?
+
+Comentários no código servem para indicar coisas não-óbvias, facilitando o entendimento, cooperação com outros desenvolvedores e a manutenabilidade do código.
+
 3 - Reescreva o código abaixo, adicionando comentários explicativos para cada linha:
 
 ```js
-let idade = 25;
-console.log(idade);
+let idade = 25; // cria uma variável com o identificador 'idade' e atribui o valor de 25.
+
+console.log(idade); // imprime o valor atual da variável 'idade' no console.
 ```
 
 4 - Corrija os erros de sintaxe no trecho abaixo:
 
 ```js
-let nome = "Ana
-console.log(nome
+let nome = "Ana";
+console.log(nome);
 ```
 
 ## Variáveis
