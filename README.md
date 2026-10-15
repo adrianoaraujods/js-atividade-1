@@ -122,17 +122,93 @@ console.log("Cidade onde mora: ", cidade);
 ## Operadores
 
 1 - O que são operadores aritméticos? Dê 3 exemplos.
+
+Operadores aritméticos são formas de realizar operações (matemáticas ou gramáticais) utilizando duas variáveis. O seu comportamento depende dos tipos das variáveis utilizadas, de modo que alguns operadores (como `+`) são sobrecarregados. Exemplos:
+
+- **`var1 + var2`:**
+  - `1 + 2`: retorna `3`, que corresponde ao valor da soma de `1` e `2`.
+  - `"abc" + "def"`: retorna `abcdef`, que corresponde a concatenação das strings `abc` e `def`.
+
+- **`var1 - var2`:**
+  - `5 - 3`: retorna `2`, que corresponde a subtração de `5` por `3`.
+
+- **`var1 * var2`:**
+  - `4 * 3`: retorna `12`, que corresponde ao produto entre `4` e `3`.
+
 2 - O que são operadores de comparação? Explique com exemplos.
+
+Operadores de comparação servem para fazer operações booleanas, sempre retornando um valor de alguma parte das expressões (normalmente `true` ou `false`). Esse operadores normalmente utilizam duas expressões que também são booleanas. O JavaScript sempre tenta converter uma variável em um valor booleano, mas isso pode causar comportamentos inesperados.
+
+- **`==`:** compara o se duas expressões tem valores iguais.
+- **`===`:** compara se duas expressões tem valores e tipos iguais.
+- **`!==`:** compara se duas expressões tem valores e tipos diferentes.
+- **`||`:** funciona como um 'OU' lógico, verificando se uma das expressões é verdadeira, retornando o valor da primeira expressão caso ela seja verdadeira ou retornando o valor da segunda caso contrário.
+- **`&&`:** funciona como um 'E' lógico, verificando se ambas expressões são verdadeiras, retornando o valor da segunda expressão caso sejam ou retornando `false` caso contrário.
+- **`>`:** compara se o valor da primeira expressão é maior que o da segunda, retornando `true` caso seja e `false` caso contrário.
+- **`<=`:** compara se o valor da primeira expressão é menor ou igual ao segunda, retornando `true` caso seja e `false` caso contrário.
+
 3 - Usando variáveis numéricas, calcule e exiba:
 
-- Soma
-- Subtração
-- Multiplicação
-- Divisão
-- Resto da divisão
+- Soma:
+
+```js
+const a = 7;
+const b = 5;
+console.log(a + b); // imprime 13
+```
+
+- Subtração:
+
+```js
+const a = 7;
+const a = 5;
+console.log(a - b); // imprime 2
+```
+
+- Multiplicação:
+
+```js
+const a = 7;
+const a = 5;
+console.log(a * b); // imprime 30
+```
+
+- Divisão:
+
+```js
+const a = 7;
+const a = 5;
+console.log(a / b); // imprime 1
+```
+
+- Resto da divisão:
+
+```js
+const a = 7;
+const a = 5;
+console.log(a % b); // imprime 2
+```
 
 4 - Compare duas variáveis e exiba no console se elas são iguais ou diferentes.
+
+```js
+const a = 7;
+const a = 5;
+console.log(a === b); // imprime false
+```
+
 5 - Use operadores lógicos para:
 
 - Verificar se um número é maior que 10 e menor que 50.
+
+```js
+const numero = 7;
+console.log(numero > 10 && numero < 50); // imprime false
+```
+
 - Verificar se um número é menor que 5 ou maior que 20.
+
+```js
+const numero = 7;
+console.log(numero < 5 || numero > 20); // imprime false
+```
